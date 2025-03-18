@@ -1,0 +1,28 @@
+.button {
+  border-radius: 12px;
+  padding: 14px 87px;
+  height: 52px;
+  background: #4dc274; /* TODO: replace with variable once added */
+  border: none;
+  font-family: 'Manrope', sans-serif; /* TODO: replace with variable once added */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #fff; /* TODO: replace with variable once added */
+}
+
+.button:hover,
+.button:focus {
+  background: #38ae5f;
+  cursor: pointer;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .button {
+    padding: 16px 64px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
