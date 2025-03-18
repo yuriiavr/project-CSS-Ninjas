@@ -13,3 +13,15 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
+.mark::after {
+  position: absolute;
+  content: "";
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  border-radius: 8px;
+  background: #BEE8CC;
+  z-index: -1;
+}
