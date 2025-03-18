@@ -1,0 +1,92 @@
+.outlined {
+  outline: darkred solid 2px;
+}
+
+.about {
+  max-width: 335px;
+  margin: 20px auto;
+}
+.description {
+}
+.about-title {
+  color: #121417;
+  text-align: center;
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.12; /* 112.5% */
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.about-marked {
+  position: relative;
+}
+
+.about-text {
+  color: rgba(18, 20, 23, 0.50);
+  text-align: center;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.71; /* 171.429% */
+}
+.about-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 20px;
+  counter-reset: list-counter;
+  list-style: none;
+  padding-left: 0;
+}
+.about-list-item {
+  counter-increment: list-counter;
+  position: relative;
+  color: #121417;
+  background-color: #F3F5F6;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -0.02em;
+  border-radius: 16px;
+  padding: 80px 32px 32px 32px;
+
+}
+.about-list-item::before {
+  content: counter(list-counter, decimal-leading-zero);
+  position: absolute;
+  top: 47px;
+  left: 48px;
+  transform: translate(-50%, -50%);
+  color: #4DC274;
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.14; /* 114.286% */
+  letter-spacing: -0.02em;
+
+}
+.about-memoji {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 335px;
+  height: 313px;
+  border-radius: 16px;
+  background-color: #4DC274;
+}
+.about-memoji-photo {
+  display: flex;
+  width: 254px;
+  min-height: 172px;
+  padding: 18px 0 21px;
+  background-image: url('../img/memoji.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
