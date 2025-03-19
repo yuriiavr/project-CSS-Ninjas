@@ -1,24 +1,49 @@
-<section class="application">
+<section id="application">
   <div class="container">
-    <h2>Leave an <span>application</span></h2>
-    <p>
+    <h2 class="title">
+      Leave an <span class="marked mark">application</span>
+    </h2>
+    <p class="application-text">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
     </p>
     <div>
-      <div>
-        <img src="" alt="" />
+      <div class="application-info">
+        <img
+          class="application-img"
+          src="../img/leave-an-application.jpg"
+          alt="A young girl sitting at a table in front of a computer, practicing exercises."
+        />
         <p>
           <span>1000</span>of our online English language lessons! This journey
           has been full of discovery, growth and unforgettable moments, and we
           are happy to share this joyful event with you.
         </p>
       </div>
-      <form action="">
-        <input type="text" />
-        <input type="email" />
-        <input type="tel" />
-        <textarea name="" id=""></textarea>
+
+      <form
+        class="application-form"
+        action="/actions/confirmation.php"
+        method="post"
+      >
+        <input class="input-basic" type="text" name="name" placeholder="Name" />
+        <input
+          class="input-basic"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+        <input
+          class="input-basic"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+        />
+        <textarea
+          class="input-basic"
+          name="comment"
+          placeholder="Comment"
+        ></textarea>
 
         <p>Choose a teacher</p>
         <input type="radio" id="maria" name="teacher" value="Maria" />
@@ -32,8 +57,10 @@
 
         <button type="submit">Send</button>
 
-        <p>By clicking on “Send” button, you agree to our Privacy Policy, 
-            and allow Promodo to use this information for marketing purposes.</p>
+        <p>
+          By clicking on “Send” button, you agree to our Privacy Policy, and
+          allow Promodo to use this information for marketing purposes.
+        </p>
       </form>
     </div>
   </div>

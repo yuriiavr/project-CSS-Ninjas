@@ -1,0 +1,58 @@
+/* Mobile 375px */
+
+#application {
+  border: 1px solid red;
+}
+
+.application-text {
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid red;
+}
+
+.application-info {
+  display: none;
+}
+
+.input-basic {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+}
+
+.input-basic::placeholder {
+  color: #121417;
+  font-size: 14px;
+}
+
+/* #region Form Mobile 375px */
+
+/* #endregion */
+
+/* #region Tablet 768px */
+
+@media only screen and (min-width: 768px) {
+  .application-text {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+}
+
+/* #endregion */
+
+/* #region Desktop 1280px */
+
+@media only screen and (min-width: 1280px) {
+  .application-info {
+    display: block;
+  }
+
+  .application-img {
+    width: 597px;
+    height: auto;
+  }
+}
+
+/* #endregion */
