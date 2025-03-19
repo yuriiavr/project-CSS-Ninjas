@@ -1,11 +1,28 @@
 .about {
   max-width: 335px;
   margin: 20px auto;
+
+  @media only screen and (min-width: 768px) {
+    max-width: 704px;
+    margin: 32px auto;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    max-width: 1024px;
+    margin: 96px auto;
+  }
 }
-.description {
+
+.about-description {
+  margin-bottom: 40px;
+
+  @media only screen and (min-width: 768px) {
+      margin-bottom: 64px;
+  }
 }
+
 .about-title {
-  color: #121417;
+  color: #121417; /* TODO: replace with variable once added */
   text-align: center;
   font-family: inherit;
   font-size: 32px;
@@ -13,15 +30,44 @@
   line-height: 1.12; /* 112.5% */
   letter-spacing: -0.02em;
   margin-bottom: 16px;
-}
 
+  @media only screen and (min-width: 768px) {
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.2; /* 120% */
+  }
+
+  @media only screen and (min-width: 1280px) {
+    font-weight: 700;
+  }
+}
 .about-text {
   color: rgba(18, 20, 23, 0.50);
   text-align: center;
   font-family: inherit;
   font-size: 14px;
   line-height: 1.71; /* 171.429% */
+
+  @media only screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.66; /* 166% */
+  }
+
+  @media only screen and (min-width: 1280px) {
+    margin: 0 87px;
+  }
 }
+
+.about-info {
+  @media only screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    column-gap: 32px;
+
+  }
+}
+
 .about-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -31,12 +77,26 @@
   counter-reset: list-counter;
   list-style: none;
   padding-left: 0;
+  margin-bottom: 20px;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    grid-template-rows: repeat(2, 160px);
+    margin-top: 0;
+  }
 }
+
 .about-list-item {
   counter-increment: list-counter;
   position: relative;
-  color: #121417;
-  background-color: #F3F5F6;
+  color: #121417; /* TODO: replace with variable once added */
+  background-color: #F3F5F6; /* TODO: replace with variable once added */
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
@@ -45,31 +105,48 @@
   border-radius: 16px;
   padding: 80px 32px 32px 32px;
 
+  @media only screen and (min-width: 768px) {
+    font-weight: normal;
+    border-radius: 30px;
+  }
 }
+
 .about-list-item::before {
   content: counter(list-counter, decimal-leading-zero);
   position: absolute;
   top: 47px;
   left: 48px;
   transform: translate(-50%, -50%);
-  color: #4DC274;
+  color: #4DC274; /* TODO: replace with variable once added */
   font-family: inherit;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.14; /* 114.286% */
   letter-spacing: -0.02em;
-
 }
+
 .about-memoji {
   display: flex;
   justify-content: center;
   align-items: center;
-
   max-width: 335px;
   height: 313px;
   border-radius: 16px;
-  background-color: #4DC274;
+  background-color: #4DC274; /* TODO: replace with variable once added */
+
+  @media only screen and (min-width: 768px) {
+    max-width: 704px;
+    height: 243px;
+    border-radius: 30px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    max-width: 310px;
+    height: 352px;
+    border-radius: 30px;
+  }
 }
+
 .about-memoji-photo {
   display: flex;
   width: 254px;
