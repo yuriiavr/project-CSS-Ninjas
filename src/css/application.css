@@ -2,7 +2,6 @@
 
 #application {
   margin-bottom: 80px;
-  border: 1px solid red;
 }
 
 #application .container {
@@ -14,7 +13,6 @@
 .application-text {
   text-align: center;
   margin-bottom: 20px;
-  border: 1px solid red;
 }
 
 .application-info {
@@ -26,13 +24,13 @@
   width: 100%;
   padding: 16px 18px;
   border-radius: 12px;
-  border: 1px solid rgba(18, 20, 23, 0.1);
+  border: 1px solid var(--black_10);
 }
 
 .input-basic::placeholder {
-  color: #121417;
+  color: var(--black);
   font-size: 14px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-family);
 }
 
 .input-basic:not(:last-child) {
@@ -40,7 +38,7 @@
 }
 
 .radio-title {
-  color: #121417;
+  color: var(--black);
   font-size: 18px;
   font-weight: 600;
   line-height: calc(24 / 18);
@@ -57,7 +55,7 @@
 } */
 
 .radio-label {
-  color: #121417;
+  color: var(--black);
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: -0.28px;
@@ -71,7 +69,7 @@
 
 .privacy-policy {
   font-size: 12px;
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--black_50);
   line-height: calc(16 / 12);
 }
 
@@ -100,11 +98,23 @@
 
   .application-info {
     display: block;
+    max-width: 492px;
+    border: 1px solid red;
   }
 
-  .application-img {
+  /* .application-img {
     width: 597px;
     height: auto;
+  } */
+
+  .number {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: calc(48 / 40) 48px;
+    color: var(--white);
+    background-color: var(--green);
   }
 }
 
