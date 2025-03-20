@@ -22,7 +22,7 @@
 }
 
 .about-title {
-  color: #121417; /* TODO: replace with variable once added */
+  color: var(--black);
   text-align: center;
   font-family: inherit;
   font-size: 32px;
@@ -64,7 +64,6 @@
     justify-content: space-between;
     align-items: stretch;
     column-gap: 32px;
-
   }
 }
 
@@ -96,8 +95,8 @@
 .about-list-item {
   counter-increment: list-counter;
   position: relative;
-  color: #121417; /* TODO: replace with variable once added */
-  background-color: #F3F5F6; /* TODO: replace with variable once added */
+  color: var(--black);
+  background-color: var(--gray);
   font-family: inherit;
   font-size: 20px;
   font-weight: 700;
@@ -118,7 +117,7 @@
   top: 47px;
   left: 48px;
   transform: translate(-50%, -50%);
-  color: #4DC274; /* TODO: replace with variable once added */
+  color: var(--green);
   font-family: inherit;
   font-size: 28px;
   font-weight: 700;
@@ -133,7 +132,7 @@
   max-width: 335px;
   height: 313px;
   border-radius: 16px;
-  background-color: #4DC274; /* TODO: replace with variable once added */
+  background-color: var(--green);
 
   @media only screen and (min-width: 768px) {
     max-width: 704px;
