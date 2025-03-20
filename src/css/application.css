@@ -19,7 +19,7 @@
   display: none;
 }
 
-.input-basic {
+.input-field {
   box-sizing: border-box;
   width: 100%;
   padding: 16px 18px;
@@ -27,14 +27,19 @@
   border: 1px solid var(--black_10);
 }
 
-.input-basic::placeholder {
+.input-field::placeholder {
   color: var(--black);
   font-size: 14px;
   font-family: var(--font-family);
 }
 
-.input-basic:not(:last-child) {
+.input-field:not(:last-child) {
   margin-bottom: 18px;
+}
+
+.input-field:focus {
+  border: none;
+  outline: 1px solid var(--green);
 }
 
 textarea {
@@ -50,13 +55,70 @@ textarea {
   margin-bottom: 14px;
 }
 
-/* .radio-container:not(:last-child) {
-  margin-bottom: 8px;
-} */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid red;
+}
 
-/* input[type='radio']:checked {
-  color: #4dc274;
-} */
+.radio-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid red;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio'] + label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+input[type='radio'] + label:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--black_20);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 9px;
+  background-color: var(--white);
+  transition: 0.3s;
+  position: relative;
+  top: -2px;
+  left: 2px;
+}
+
+input[type='radio']:checked + label:before {
+  background-color: var(--green);
+  border: 2px solid var(--white);
+  box-shadow: 0 0 5px var(--green);
+  z-index: 5;
+}
+
+input[type='radio']:checked + label:after {
+  background-color: var(--green);
+  border: 2px solid var(--white);
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--green);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  background-color: wvar(--white);
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .radio-label {
   color: var(--black);
@@ -64,6 +126,7 @@ textarea {
   line-height: calc(24 / 14);
   letter-spacing: -0.28px;
 }
+
 
 .form-btn {
   width: 100%;
