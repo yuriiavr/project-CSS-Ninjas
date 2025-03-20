@@ -1,6 +1,13 @@
 .proposal {
-    background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
-}
+    max-width: 1152px;
+    display: inline-flex;
+    height: 950px;
+    padding: 64px 312px 746px 64px;
+    align-items: center;
+    flex-shrink: 0;
+border-radius: 30px;
+background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
+        }
 
 .proposal-title {
     color: #FFF;
@@ -11,4 +18,49 @@
     font-weight: 700;
     line-height: 70px;
     /* 116.667% */
+}
+
+.proposal-title-Language {
+    color: #BEE8CC;
+    /* Corrected from font-color to color */
+    font-family: Manrope;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    /* 116.667% */
+}
+
+.proposal-title-end {
+    color: #FFF;
+    /* Corrected from font-color to color */
+    font-family: Manrope;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    /* 116.667% */
+}
+
+
+.power-of-english {
+    padding: 64px;
+    background: #FFF;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.power-list {
+    gap: 20px;
+}
+
+.power-text {
+    color: #121417;
+    font-family: Manrope;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 120% */
+    letter-spacing: -0.8px;
 }
