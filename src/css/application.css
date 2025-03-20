@@ -1,21 +1,22 @@
 /* Mobile 375px */
 
 #application {
-  border: 1px solid red;
+  margin-bottom: 80px;
+}
+
+#application .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .application-text {
   text-align: center;
   margin-bottom: 20px;
-  border: 1px solid red;
 }
 
 .application-info {
   display: none;
-}
-
-.application {
-  margin-bottom: 80px;
 }
 
 .input-basic {
@@ -23,21 +24,25 @@
   width: 100%;
   padding: 16px 18px;
   border-radius: 12px;
-  border: 1px solid rgba(18, 20, 23, 0.1);
+  border: 1px solid var(--black_10);
 }
 
 .input-basic::placeholder {
-  color: #121417;
+  color: var(--black);
   font-size: 14px;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-family);
 }
 
 .input-basic:not(:last-child) {
   margin-bottom: 18px;
 }
 
+textarea {
+  resize: none;
+}
+
 .radio-title {
-  color: #121417;
+  color: var(--black);
   font-size: 18px;
   font-weight: 600;
   line-height: calc(24 / 18);
@@ -45,8 +50,19 @@
   margin-bottom: 14px;
 }
 
-.radio-container:not(:last-child) {
+/* .radio-container:not(:last-child) {
   margin-bottom: 8px;
+} */
+
+/* input[type='radio']:checked {
+  color: #4dc274;
+} */
+
+.radio-label {
+  color: var(--black);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: -0.28px;
 }
 
 .form-btn {
@@ -55,20 +71,9 @@
   margin-bottom: 16px;
 }
 
-/* .radio-btn {
-    color: #4DC274;
-} */
-
-.radio-label {
-  color: #121417;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: -0.28px;
-}
-
 .privacy-policy {
   font-size: 12px;
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--black_50);
   line-height: calc(16 / 12);
 }
 
@@ -76,8 +81,12 @@
 
 @media only screen and (min-width: 768px) {
   .application-text {
-    text-align: center;
+    max-width: 630px;
     margin-bottom: 64px;
+  }
+
+  .application-form {
+    max-width: 500px;
   }
 }
 
@@ -86,13 +95,43 @@
 /* #region Desktop 1280px */
 
 @media only screen and (min-width: 1280px) {
-  .application-info {
-    display: block;
+  .application {
+    display: flex;
+    column-gap: 32px;
   }
 
-  .application-img {
+  .application-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    max-width: 492px;
+    background-image: url('../img/application/leave-an-application@2x.png');
+    background-repeat: no-repeat;
+    background-position: bottom 186px left 0;
+    background-size: 492px;
+    border-radius: 30px;
+    background-color: var(--green);
+  }
+
+  /* .application-img {
     width: 597px;
     height: auto;
+  } */
+
+  .benefits {
+    margin: 20px 20px 40px 20px;
+    color: var(--light-gray);
+    text-align: center;
+  }
+
+  .number {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: calc(48 / 40) 48px;
+    color: var(--white);
+    margin-bottom: 8px;
   }
 }
 
