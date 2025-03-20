@@ -1,6 +1,5 @@
 
 <!-- TODO: Add ids to each section for navigation: about-us, our-lessons, our-teachers, reviews, contact-us -->
-<!-- TODO: Add <script type="module" src="./header.js"></script> to index.html-->
 
 <header class="header">
       <div class="header-container">
@@ -13,7 +12,7 @@
           <ul class="header-nav header-nav-desktop">
             <li class="header-nav-item">
               <a
-                class="header-nav-link header-nav-link-active"
+                class="header-nav-link"
                 href="#about-us"
                 aria-label="About us section"
               >
@@ -76,7 +75,7 @@
               target="_blank"
             >
               <svg class="header-social-icon" height="28" width="28">
-                <use href="../img/icons.svg#icon-facebook"></use>
+                <use href="./img/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -87,7 +86,7 @@
               target="_blank"
             >
               <svg class="header-social-icon" height="28" width="28">
-                <use href="../img/icons.svg#icon-instagram"></use>
+                <use href="./img/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -98,14 +97,15 @@
               target="_blank"
             >
               <svg class="header-social-icon" height="28" width="28">
-                <use href="../img/icons.svg#icon-youtube"></use>
+                <use href="./img/icons.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
 
         <!--mobile menu -->
-        <div class="mobile-header-nav-sidebar" id="navigation">
+        <div class="mobile-header-nav-sidebar-overlay">
+          <div class="mobile-header-nav-sidebar" id="navigation">
           <ul class="mobile-header-nav">
             <li class="mobile-header-nav-item">
               <a
@@ -154,34 +154,35 @@
             <li class="mobile-header-social-item">
               <a
                 class="mobile-header-social-item-link"
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/" target="_blank"
               >
                 <svg class="header-social-icon" height="28" width="28">
-                  <use href="../img/icons.svg#icon-facebook"></use>
+                  <use href="./img/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="mobile-header-social-item">
               <a
                 class="mobile-header-social-item-link"
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/" target="_blank"
               >
                 <svg class="header-social-icon" height="28" width="28">
-                  <use href="../img/icons.svg#icon-instagram"></use>
+                  <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="mobile-header-social-item">
               <a
                 class="mobile-header-social-item-link"
-                href="https://www.x.com/"
+                href="https://www.x.com/" target="_blank"
               >
                 <svg class="header-social-icon" height="28" width="28">
-                  <use href="../img/icons.svg#icon-youtube"></use>
+                  <use href="./img/icons.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
         </div>
       </div>
     </header>
