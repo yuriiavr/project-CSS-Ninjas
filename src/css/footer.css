@@ -143,6 +143,11 @@ ol {
   width: 42px;
   height: 42px;
 }
+
+.icon{
+  fill: #ffffff;
+}
+
 .link:hover {
   border: 1px solid rgba(77, 194, 116, 0.1);
 }
@@ -152,6 +157,7 @@ ol {
 .link:focus .icon {
   fill: #4dc274;
 }
+
 .container-social {
   display: flex;
   gap: 12px;
