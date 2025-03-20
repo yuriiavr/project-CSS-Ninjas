@@ -1,0 +1,14 @@
+.proposal {
+    background: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
+}
+
+.proposal-title {
+    color: #FFF;
+    /* Corrected from font-color to color */
+    font-family: Manrope;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    /* 116.667% */
+}
