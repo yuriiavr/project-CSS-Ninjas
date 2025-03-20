@@ -17,7 +17,7 @@
   --border-color-light: rgba(255, 255, 255, 0.1);
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -26,7 +26,6 @@
 .header {
   position: relative;
   margin-bottom: 16px;
-
 }
 @media (min-width: 1280px) {
   .header {
@@ -45,7 +44,6 @@
   max-width: 1152px;
   margin: 0 auto;
   padding: 0 20px;
-
 }
 @media (min-width: 1280px) {
   .header-container {
@@ -157,7 +155,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-social-icon {
-fill: var(--header-color-base);
+  fill: var(--header-color-base);
 }
 
 .mobile-header-social-item-link {
@@ -177,8 +175,6 @@ fill: var(--header-color-base);
 .mobile-header-social-item-link:focus .header-social-icon {
   opacity: 0.7;
 }
-
-
 
 /*burger menu*/
 .burger-menu {
@@ -287,14 +283,11 @@ fill: var(--header-color-base);
 }
 
 .burger-squeeze .burger-line::before {
-  transition:
-    top 0.075s 0.12s ease,
-    opacity 0.075s ease;
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
 }
 
 .burger--squeeze .burger-line::after {
-  transition:
-    bottom 0.075s 0.12s ease,
+  transition: bottom 0.075s 0.12s ease,
     transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
@@ -316,17 +309,14 @@ fill: var(--header-color-base);
   top: 0;
   background-color: var(--header-color-light);
   opacity: 0;
-  transition:
-    top 0.075s ease,
-    opacity 0.075s 0.12s ease;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
 }
 
 .burger-squeeze.is-active .burger-line::after {
   bottom: 0;
   background-color: var(--header-color-light);
   transform: rotate(-90deg);
-  transition:
-    bottom 0.075s ease,
+  transition: bottom 0.075s ease,
     transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -343,8 +333,7 @@ fill: var(--header-color-base);
   display: none;
 }
 
-
-.mobile-header-nav-sidebar-overlay{
+.mobile-header-nav-sidebar-overlay {
   background-color: rgba(18, 20, 23, 0.4);
   position: fixed;
   top: 0;
@@ -356,14 +345,12 @@ fill: var(--header-color-base);
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition:
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 888;
-
 }
 
-.mobile-header-nav-sidebar-overlay.is-open{
+.mobile-header-nav-sidebar-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;

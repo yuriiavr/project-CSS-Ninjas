@@ -1,10 +1,15 @@
 .footer {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   background-color: #121417;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -21,7 +26,8 @@ address {
   font-style: normal;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding-left: 0;
   list-style-type: none;
@@ -44,12 +50,12 @@ ul, ol {
   }
 }
 
-.footer-wrapper{
+.footer-wrapper {
   position: relative;
 }
 
-.footer-wrapper::after{
-  content: "";
+.footer-wrapper::after {
+  content: '';
   position: absolute;
   left: 0;
   bottom: -40px;
@@ -58,42 +64,40 @@ ul, ol {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (min-width: 768px){
-  .footer-wrapper{
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 126px;
   }
 
-
-  .footer-wrapper::after{
+  .footer-wrapper::after {
     bottom: -110px;
-    width:100%;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 1280px){
-  .footer-wrapper{
+@media screen and (min-width: 1280px) {
+  .footer-wrapper {
     margin-bottom: 87px;
   }
 
-
-  .footer-wrapper::after{
+  .footer-wrapper::after {
     bottom: -64px;
   }
 }
 
-.footer-logo{
+.footer-logo {
   display: inline-block;
   font-weight: 700;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
-.footer-logo-span{
-  color: #4DC274;
+.footer-logo-span {
+  color: #4dc274;
 }
-.footer-paragraph{
+.footer-paragraph {
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
@@ -103,21 +107,21 @@ ul, ol {
   margin-bottom: 4px;
 }
 
-.footer-contact{
+.footer-contact {
   font-weight: 600;
   font-size: 14px;
   line-height: 129%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.footer-contacts-container{
+.footer-contacts-container {
   display: flex;
   flex-direction: column;
-  gap:16px;
+  gap: 16px;
   margin-bottom: 40px;
 }
 
-.footer-nav{
+.footer-nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -126,10 +130,10 @@ ul, ol {
   font-weight: 600;
   font-size: 14px;
   line-height: 129%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.link{
+.link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,22 +143,22 @@ ul, ol {
   width: 42px;
   height: 42px;
 }
-.link:hover{
+.link:hover {
   border: 1px solid rgba(77, 194, 116, 0.1);
 }
-.link:hover .icon{
-  fill: #4DC274;
+.link:hover .icon {
+  fill: #4dc274;
 }
-.link:focus .icon{
-  fill: #4DC274;
+.link:focus .icon {
+  fill: #4dc274;
 }
-.container-social{
+.container-social {
   display: flex;
   gap: 12px;
   margin-bottom: 60px;
 }
 
-.container-copyright{
+.container-copyright {
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -165,33 +169,32 @@ ul, ol {
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.6);
   opacity: 0.9;
-
 }
 
-@media screen and (min-width: 768px){
-  .container-copyright{
+@media screen and (min-width: 768px) {
+  .container-copyright {
     flex-direction: row;
     justify-content: space-between;
   }
 }
 
-.footer-copyright-links{
+.footer-copyright-links {
   display: flex;
   gap: 18px;
 }
-.footer-copyright-link:hover{
+.footer-copyright-link:hover {
   opacity: 0.7;
 }
 
-.nav-link{
+.nav-link {
   position: relative;
 }
-.nav-link:hover::after{
-  content: "";
+.nav-link:hover::after {
+  content: '';
   position: absolute;
   left: 0;
   bottom: -5px;
   width: 37px;
   height: 2px;
-  background-color: #4DC274;
+  background-color: #4dc274;
 }
