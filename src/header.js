@@ -1,7 +1,7 @@
 // toggles mobile menu open/close
 document.querySelector('.burger-menu').addEventListener('click', function () {
   document
-    .querySelector('.mobile-header-nav-sidebar')
+    .querySelector('.mobile-header-nav-sidebar-overlay')
     .classList.toggle('is-open');
   document.querySelector('.burger-menu').classList.toggle('is-active');
 });
@@ -10,7 +10,7 @@ document.querySelector('.burger-menu').addEventListener('click', function () {
 window.addEventListener('resize', function () {
   if (window.innerWidth >= 1280) {
     document
-      .querySelector('.mobile-header-nav-sidebar')
+      .querySelector('.mobile-header-nav-sidebar-overlay')
       .classList.remove('is-open');
     document.querySelector('.burger-menu').classList.remove('is-active');
   }
