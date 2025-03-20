@@ -5,7 +5,8 @@
   --green_linear: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
   --highlight-green: #bee8cc;
   --light-green: #d4fde1;
-  --gray: #f3f5f6;
+  --gray: rgb(243, 245, 246);
+  --light-gray: rgba(255, 255, 255, 0.70);
   --white: #fff;
   --black_80: rgba(18, 20, 23, 0.5);
   --black_10: rgba(18, 20, 23, 0.1);

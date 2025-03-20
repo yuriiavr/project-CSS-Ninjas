@@ -37,6 +37,10 @@
   margin-bottom: 18px;
 }
 
+textarea {
+  resize: none;
+}
+
 .radio-title {
   color: var(--black);
   font-size: 18px;
@@ -97,9 +101,17 @@
   }
 
   .application-info {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
     max-width: 492px;
-    border: 1px solid red;
+    background-image: url('../img/application/leave-an-application@2x.png');
+    background-repeat: no-repeat;
+    background-position: bottom 186px left 0;
+    background-size: 492px;
+    border-radius: 30px;
+    background-color: var(--green);
   }
 
   /* .application-img {
@@ -107,14 +119,19 @@
     height: auto;
   } */
 
+  .benefits {
+    margin: 20px 20px 40px 20px;
+    color: var(--light-gray);
+    text-align: center;
+  }
+
   .number {
     display: block;
-    text-align: center;
     font-size: 40px;
     font-weight: 700;
     line-height: calc(48 / 40) 48px;
     color: var(--white);
-    background-color: var(--green);
+    margin-bottom: 8px;
   }
 }
 

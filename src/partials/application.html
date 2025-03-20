@@ -7,16 +7,19 @@
     </p>
     <div class="application">
       <div class="application-info">
-        <img
+        <!-- <img
           class="application-img"
           src="../img/leave-an-application.jpg"
           alt="A young girl sitting at a table in front of a computer, practicing exercises."
-        />
-        <p>
-          <span class="number">1000</span>of our online English language lessons! This journey
-          has been full of discovery, growth and unforgettable moments, and we
-          are happy to share this joyful event with you.
-        </p>
+        /> -->
+        <div class="benefits">
+          <p>
+            <span class="number">1000</span>of our online English language
+            lessons! This journey has been full of discovery, growth and
+            unforgettable moments, and we are happy to share this joyful event
+            with you.
+          </p>
+        </div>
       </div>
       <form
         class="application-form"
@@ -28,6 +31,7 @@
           type="text"
           name="name"
           placeholder="Name"
+          autocomplete="on"
           required
         />
         <input
@@ -35,12 +39,14 @@
           type="email"
           name="email"
           placeholder="Email"
+          autocomplete="on"
           required
         />
         <input
           class="input-basic"
           type="tel"
           name="phone"
+          autocomplete="on"
           placeholder="Phone"
         />
         <textarea
