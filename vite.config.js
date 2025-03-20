@@ -4,14 +4,15 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 
-export default defineConfig(({ command }) => {
+export default defineConfig(({ command, mode }) => {
   return {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
+    publicDir: './public',
     root: 'src',
     build: {
-      sourcemap: true,
+      sourcemap: mode === 'development',
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
