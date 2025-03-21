@@ -21,7 +21,7 @@
 
 .proposal-title-Language {
   color: #bee8cc;
- 
+
   font-family: Manrope;
   font-size: 60px;
   font-style: normal;
@@ -61,17 +61,17 @@
 }
 
 .power-list {
-    display: flex;
-    /* Allows icon and text to be inline */
-    align-items: left;
-    gap: 10px;
-    color: #121417;
-    font-family: Manrope, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-    gap: 10px;
+  display: flex;
+  /* Allows icon and text to be inline */
+  align-items: left;
+  gap: 10px;
+  color: #121417;
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  gap: 10px;
 }
 
 .proposal-title {
@@ -130,11 +130,11 @@
 }
 
 .power-list {
-gap: 20px;
+  gap: 20px;
   flex-direction: column;
   padding: 0;
   margin: 0;
-/*display: flex;*/
+  /*display: flex;*/
 }
 
 .power-list-item {
@@ -169,11 +169,11 @@ gap: 20px;
   /* ✅ Ensures the checkmark is visible */
 }
 
-  list-style: none;
-  padding: 0;
-  margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 /*display: flex;*/
-  flex-direction: column;
+flex-direction: column;
 }
 
 .power-list-item {
