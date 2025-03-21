@@ -10,6 +10,7 @@
   display: inline-block;
   text-align: center;
   transition: background-color var(--transition);
+  padding: 14px 78px;
 }
 
 .button:hover,
@@ -22,5 +23,6 @@
 @media only screen and (min-width: 768px) {
   .button {
     font-size: 18px;
+    padding: 16px 64px;
   }
 }
