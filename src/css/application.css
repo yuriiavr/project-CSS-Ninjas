@@ -81,8 +81,8 @@ input[type='radio'] + label {
 
 input[type='radio'] + label:before {
   content: '';
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border: 2px solid var(--black_20);
   border-radius: 50%;
   display: inline-block;
@@ -96,8 +96,7 @@ input[type='radio'] + label:before {
 
 input[type='radio']:checked + label:before {
   background-color: var(--green);
-  border: 2px solid var(--white);
-  box-shadow: 0 0 5px var(--green);
+  border: 3px solid var(--white);
   z-index: 5;
 }
 
