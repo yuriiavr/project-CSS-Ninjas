@@ -77,6 +77,7 @@ input[type='radio'] + label {
   cursor: pointer;
   font-size: 16px;
   position: relative;
+  animation: none;
 }
 
 input[type='radio'] + label:before {
@@ -88,33 +89,29 @@ input[type='radio'] + label:before {
   display: inline-block;
   margin-right: 9px;
   background-color: var(--white);
-  transition: 0.3s;
   position: relative;
-  top: -2px;
+  top: 2px;
   left: 2px;
 }
 
 input[type='radio']:checked + label:before {
   background-color: var(--green);
-  border: 2px solid var(--white);
-  box-shadow: 0 0 5px var(--green);
+  border: 3px solid var(--white);
   z-index: 5;
+  width: 10px;
+  height: 10px;
 }
 
 input[type='radio']:checked + label:after {
   background-color: var(--green);
-  border: 2px solid var(--white);
   content: '';
   width: 20px;
   height: 20px;
-  border: 2px solid var(--green);
   border-radius: 50%;
   display: inline-block;
   margin-right: 8px;
-  background-color: wvar(--white);
-  transition: 0.3s;
   position: absolute;
-  top: 0;
+  top: 5.5px;
   left: 0;
 }
 
