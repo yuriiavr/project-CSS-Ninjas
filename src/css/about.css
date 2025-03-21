@@ -1,19 +1,16 @@
 .about {
-  max-width: 335px;
-  margin: 0 auto 80px;
+  margin-bottom: 80px;
 
   @media only screen and (min-width: 768px) {
-    max-width: 704px;
     margin-bottom: 100px;
   }
 
   @media only screen and (min-width: 1280px) {
-    max-width: 1024px;
     margin-bottom: 150px;
   }
 }
 
-.about-description {
+.about-headline {
   margin-bottom: 40px;
 
   @media only screen and (min-width: 768px) {
@@ -41,7 +38,7 @@
     font-weight: 700;
   }
 }
-.about-text {
+.about-description {
   color: rgba(18, 20, 23, 0.50);
   text-align: center;
   font-family: inherit;
