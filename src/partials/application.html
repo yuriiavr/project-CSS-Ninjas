@@ -7,11 +7,6 @@
     </p>
     <div class="application">
       <div class="application-info">
-        <!-- <img
-          class="application-img"
-          src="../img/leave-an-application.jpg"
-          alt="A young girl sitting at a table in front of a computer, practicing exercises."
-        /> -->
         <div class="benefits">
           <p>
             <span class="number">1000</span>of our online English language
@@ -27,15 +22,16 @@
         method="post"
       >
         <input
-          class="input-basic"
+          class="input-field"
           type="text"
           name="name"
           placeholder="Name"
           autocomplete="on"
+          pattern="[A-Za-z ]+"
           required
         />
         <input
-          class="input-basic"
+          class="input-field"
           type="email"
           name="email"
           placeholder="Email"
@@ -43,38 +39,61 @@
           required
         />
         <input
-          class="input-basic"
+          class="input-field"
           type="tel"
           name="phone"
           autocomplete="on"
           placeholder="Phone"
+          pattern="^\+?(\d{1,4})?(\s|\-)?\(?(\d{1,4})\)?(\s|\-)?\d{1,4}(\s|\-)?\d{1,4}$"
+          required
         />
         <textarea
-          class="input-basic"
+          class="input-field"
           name="comment"
           rows="4"
           placeholder="Comment"
         ></textarea>
 
         <p class="radio-title">Choose a teacher</p>
-        <label class="radio-label"
-          >Maria <input type="radio" name="teacher" value="Maria"
-        /></label>
-        <label class="radio-label"
-          >Artem <input type="radio" name="teacher" value="Artem"
-        /></label>
-        <label class="radio-label"
-          >Ilona <input type="radio" name="teacher" value="Ilona"
-        /></label>
-        <label class="radio-label"
-          >Volodymyr <input type="radio" name="teacher" value="Volodymyr"
-        /></label>
+        <div class="radio-group">
+          <div class="radio-container">
+            <input
+              id="maria"
+              type="radio"
+              name="teacher"
+              value="Maria"
+              checked
+            />
+            <label for="maria" class="radio-label">Maria</label>
+          </div>
 
+          <div class="radio-container">
+            <input id="artem" type="radio" name="teacher" value="Artem" />
+            <label for="artem" class="radio-label">Artem</label>
+          </div>
+
+          <div class="radio-container">
+            <input id="ilona" type="radio" name="teacher" value="Ilona" />
+            <label for="ilona" class="radio-label">Ilona</label>
+          </div>
+
+          <div class="radio-container">
+            <input
+              id="volodymyr"
+              type="radio"
+              name="teacher"
+              value="Volodymyr"
+            />
+            <label for="volodymyr" class="radio-label">Volodymyr</label>
+          </div>
+        </div>
         <button class="button form-btn" type="submit">Send</button>
 
         <p class="privacy-policy">
-          By clicking on “Send” button, you agree to our Privacy Policy, and
-          allow Promodo to use this information for marketing purposes.
+          By clicking on “Send” button, you agree to our
+          <a class="underline" href="/privacy-policy">Privacy Policy</a>,
+          <br />and allow Promodo to use this information for marketing
+          purposes.
         </p>
       </form>
     </div>
