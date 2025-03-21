@@ -59,14 +59,12 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  border: 1px solid red;
 }
 
 .radio-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid red;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 input[type='radio'] {
@@ -127,7 +125,6 @@ input[type='radio']:checked + label:after {
   letter-spacing: -0.28px;
 }
 
-
 .form-btn {
   width: 100%;
   margin-top: 40px;
@@ -140,6 +137,16 @@ input[type='radio']:checked + label:after {
   line-height: calc(16 / 12);
 }
 
+a.underline {
+  color: var(--black_50);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
 /* #region Tablet 768px */
 
 @media only screen and (min-width: 768px) {
@@ -150,6 +157,16 @@ input[type='radio']:checked + label:after {
 
   .application-form {
     max-width: 500px;
+  }
+  .radio-group {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .privacy-policy {
+    font-size: 14px;
+    color: var(--black_50);
+    line-height: calc(24 / 14);
   }
 }
 
@@ -176,11 +193,6 @@ input[type='radio']:checked + label:after {
     border-radius: 30px;
     background-color: var(--green);
   }
-
-  /* .application-img {
-    width: 597px;
-    height: auto;
-  } */
 
   .benefits {
     margin: 20px 20px 40px 20px;
