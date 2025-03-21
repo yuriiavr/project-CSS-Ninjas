@@ -67,6 +67,7 @@
   padding-inline: clamp(16px, 320px, 50px);
   width: 100%;
   max-width: 306px;
+  padding: 14px 40px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -109,6 +110,7 @@
   .hero-container .hero-button {
     width: auto;
     padding-inline: clamp(16px, 320px, 64px);
+    padding: 16px 40px;
   }
 }
 
