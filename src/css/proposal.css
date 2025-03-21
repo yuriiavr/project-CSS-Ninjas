@@ -1,41 +1,30 @@
 .proposal {
-  display: inline-flex;
-  gap: 72px;
-  height: auto;
-  padding: 64px 312px 746px 64px;
-  align-items: left;
-  flex-shrink: 0;
-  border-radius: 30px;
   background: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
   margin-bottom: 80px;
 }
 
+#proposal .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .proposal-title {
   color: #fff;
-  font-family: Manrope;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 70px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .proposal-title-Language {
   color: #bee8cc;
-
-  font-family: Manrope;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 70px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .proposal-title-end {
   color: #fff;
-  font-family: Manrope;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 70px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .power-of-english {
@@ -50,14 +39,7 @@
 }
 
 .power-text {
-  color: #121417;
-  font-family: Manrope;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
-  /* 120% */
-  letter-spacing: -0.8px;
+  color: var(--black);
 }
 
 .power-list {
@@ -65,7 +47,7 @@
   /* Allows icon and text to be inline */
   align-items: left;
   gap: 10px;
-  color: #121417;
+  color: var(--black);
   font-family: Manrope, sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -119,7 +101,7 @@
 }
 
 .power-text {
-  color: #121417;
+  color: var(--black);
   font-family: Manrope;
   font-size: 40px;
   font-style: normal;
@@ -130,6 +112,7 @@
 }
 
 .power-list {
+  list-style: none;
   gap: 20px;
   flex-direction: column;
   padding: 0;
@@ -139,17 +122,9 @@
 
 .power-list-item {
   display: flex;
-  /* Allows icon and text to be inline */
   align-items: center;
-  gap: 10px;
-  color: #121417;
-  font-family: Manrope, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.4px;
-  gap: 10px;
-  /* Space between icon and text */
+  gap: 20px;
+  color: var(--black);
 }
 
 .power-icons {
@@ -167,42 +142,4 @@
 .check svg {
   fill: white;
   /* ✅ Ensures the checkmark is visible */
-}
-
-list-style: none;
-padding: 0;
-margin: 0;
-/*display: flex;*/
-flex-direction: column;
-}
-
-.power-list-item {
-  display: flex;
-  /* Allows icon and text to be inline */
-  align-items: center;
-  gap: 10px;
-  color: #121417;
-  font-family: Manrope, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.4px;
-  gap: 10px;
-  /* Space between icon and text */
-}
-
-.power-icons {
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #4dc274;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.check svg {
-  fill: white;
-  /* Ensures the checkmark is visible */
 }
