@@ -1,15 +1,16 @@
 .button {
   border-radius: 12px;
   padding-inline: clamp(16px, 320px, 64px);
-  background: #4dc274; /* TODO: replace with variable once added */
+  background: var(--green);
   border: none;
-  font-family: 'Manrope', sans-serif; /* TODO: replace with variable once added */
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
-  color: #fff; /* TODO: replace with variable once added */
+  color: var(--white);
   display: inline-block;
   line-height: 3.71;
   text-align: center;
+  transition: background-color var(--transition);
 }
 
 .button:hover,

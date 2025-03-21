@@ -10,7 +10,7 @@
   font-weight: 700;
   font-size: 38px;
   line-height: 1.05;
-  color: white;
+  color: var(--white);
   max-width: 564px;
   margin-bottom: 40px;
 }
@@ -42,7 +42,7 @@
 }
 
 .accent {
-  color: #bee8cc;
+  color: var(--highlight-green);
 }
 
 .to-footer {
@@ -53,8 +53,8 @@
   padding: 9px;
   border-radius: 100%;
   border: none;
-  background-color: white;
-  fill: #4dc274; /* TODO: replace with variable once added */
+  background-color: var(--white);
+  fill: var(--green);
   cursor: pointer;
 }
 
