@@ -27,6 +27,7 @@
           name="name"
           placeholder="Name"
           autocomplete="on"
+          pattern="[A-Za-z ]+"
           required
         />
         <input
@@ -43,6 +44,7 @@
           name="phone"
           autocomplete="on"
           placeholder="Phone"
+          pattern="^\+?(\d{1,4})?(\s|\-)?\(?(\d{1,4})\)?(\s|\-)?\d{1,4}(\s|\-)?\d{1,4}$"
           required
         />
         <textarea
