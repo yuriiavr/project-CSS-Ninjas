@@ -8,7 +8,6 @@
   font-size: 14px;
   color: var(--white);
   display: inline-block;
-  line-height: 3.71;
   text-align: center;
   transition: background-color var(--transition);
 }
@@ -22,7 +21,6 @@
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .button {
-    line-height: 3.33;
     font-size: 18px;
   }
 }

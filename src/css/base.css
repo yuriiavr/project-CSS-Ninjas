@@ -38,6 +38,10 @@ body {
   }
 }
 
+.section{
+  margin: 75px 0;
+}
+
 .title {
   font-weight: 700;
   font-size: 32px;
