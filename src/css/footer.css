@@ -95,7 +95,7 @@ ol {
   margin-bottom: 20px;
 }
 .footer-logo-span {
-  color: #4dc274;
+  color: var(--green);
 }
 .footer-paragraph {
   font-weight: 400;
@@ -152,10 +152,10 @@ ol {
   border: 1px solid rgba(77, 194, 116, 0.1);
 }
 .link:hover .icon {
-  fill: #4dc274;
+  fill: var(--green);
 }
 .link:focus .icon {
-  fill: #4dc274;
+  fill: var(--green);
 }
 
 .container-social {
@@ -202,5 +202,5 @@ ol {
   bottom: -5px;
   width: 37px;
   height: 2px;
-  background-color: #4dc274;
+  background-color: var(--green);
 }
