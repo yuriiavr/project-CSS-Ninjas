@@ -84,7 +84,7 @@
 }
 
 .teachers-section-description {
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--black_50);
   text-align: center;
   font-size: 14px;
   line-height: 1.71429;

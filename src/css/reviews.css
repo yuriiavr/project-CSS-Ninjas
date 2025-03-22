@@ -122,7 +122,7 @@
 
 .reviews-review {
   /* todo: variable color */
-  color: rgba(18, 20, 23, 0.5);
+  color: var(--black_50);
   font-weight: 400px;
   font-size: 14px;
   line-height: 24px;
