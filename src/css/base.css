@@ -2,10 +2,15 @@
   /* Colors */
   --black: #121417;
   --green: #4dc274;
-  --green_linear: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
+  --green_linear: linear-gradient(
+    85deg,
+    var(--green) 2.25%,
+    var(--highlight-green) 131.25%
+  );
   --highlight-green: #bee8cc;
   --light-green: #d4fde1;
-  --gray: rgb(243, 245, 246);
+  --gray: #f3f5f6;
+  --light-gray_50: rgba(255, 255, 255, 0.5);
   --light-gray: rgba(255, 255, 255, 0.7);
   --white: #fff;
   --black_10: rgba(18, 20, 23, 0.1);
@@ -24,7 +29,7 @@
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-family);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -38,7 +43,7 @@ body {
   }
 }
 
-.section{
+.section {
   margin: 75px 0;
 }
 
@@ -74,13 +79,13 @@ body {
   z-index: -1;
 }
 
-.text{
+.text {
   font-size: 18px;
   line-height: 1.6;
-  color:rgba(18, 20, 23, 0.5);
+  color: rgba(18, 20, 23, 0.5);
 }
 
-.text-sm{
+.text-sm {
   font-size: 16px;
   line-height: 1.5;
 }
