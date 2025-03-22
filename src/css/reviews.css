@@ -32,7 +32,6 @@
   font-size: 32px;
   line-height: 36px;
   letter-spacing: -0.6px;
-  /* todo: variable color */
   color: var(--black);
   text-align: center;
 }
@@ -48,7 +47,6 @@
   top: 27px;
   left: 0;
   z-index: -1;
-  /* todo: variable color */
   background-color: var(--highlight-green);
   display: inline-block;
   width: 100%;
@@ -69,7 +67,6 @@
   flex-direction: column;
   padding: 20px 20px 40px;
   border-radius: 16px;
-  /* todo: variable color */
   background-color: #f3f5f6;
   row-gap: 20px;
 }
@@ -79,7 +76,6 @@
   height: 78px;
   padding: 14px;
   column-gap: 8px;
-  /* todo: variable color */
   background-color: var(--green);
   border-radius: 8px;
 }
@@ -108,7 +104,6 @@
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.6px;
-  /* todo: variable color */
   color: var(--white);
 }
 
@@ -116,12 +111,10 @@
   font-weight: 400px;
   font-size: 12px;
   line-height: 16px;
-  /* todo: variable color */
   color: rgba(255, 255, 255, 0.5);
 }
 
 .reviews-review {
-  /* todo: variable color */
   color: var(--black_50);
   font-weight: 400px;
   font-size: 14px;

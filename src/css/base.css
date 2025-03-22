@@ -38,7 +38,7 @@ body {
   }
 }
 
-.section{
+.section {
   margin: 75px 0;
 }
 
@@ -74,13 +74,13 @@ body {
   z-index: -1;
 }
 
-.text{
+.text {
   font-size: 18px;
   line-height: 1.6;
-  color:rgba(18, 20, 23, 0.5);
+  color: rgba(18, 20, 23, 0.5);
 }
 
-.text-sm{
+.text-sm {
   font-size: 16px;
   line-height: 1.5;
 }
