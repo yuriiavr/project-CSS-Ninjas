@@ -91,7 +91,7 @@ ol {
   display: inline-block;
   font-weight: 700;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 20px;
 }
 .footer-logo-span {
@@ -111,7 +111,7 @@ ol {
   font-weight: 600;
   font-size: 14px;
   line-height: 129%;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .footer-contacts-container {
@@ -130,7 +130,7 @@ ol {
   font-weight: 600;
   font-size: 14px;
   line-height: 129%;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .link {
@@ -145,7 +145,7 @@ ol {
 }
 
 .icon {
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 .link:hover {

@@ -109,7 +109,7 @@
   line-height: 24px;
   letter-spacing: -0.6px;
   /* todo: variable color */
-  color: #ffffff;
+  color: var(--white);
 }
 
 .reviews-card-profile-status {
