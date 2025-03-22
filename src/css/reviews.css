@@ -33,7 +33,7 @@
   line-height: 36px;
   letter-spacing: -0.6px;
   /* todo: variable color */
-  color: #121417;
+  color: var(--black);
   text-align: center;
 }
 

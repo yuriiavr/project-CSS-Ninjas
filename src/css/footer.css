@@ -1,6 +1,6 @@
 .footer {
   font-family: 'Manrope', sans-serif;
-  background-color: #121417;
+  background-color: var(--black);
   margin: 0;
 }
 
@@ -144,7 +144,7 @@ ol {
   height: 42px;
 }
 
-.icon{
+.icon {
   fill: #ffffff;
 }
 
