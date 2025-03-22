@@ -1,172 +1,171 @@
 @media only screen and (min-width: 768px) {
-    .section-description {
-        max-width: 709px;
-    }
+  .section-description {
+    max-width: 709px;
+  }
 }
 
 .teachers-list {
-    display: grid;
-    grid-template-columns: minmax(auto, 335px);
-    place-content: center;
-    gap: 40px;
+  display: grid;
+  grid-template-columns: minmax(auto, 335px);
+  place-content: center;
+  gap: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-    .teachers-list {
-        grid-template-columns: repeat(2, minmax(auto, 272px));
-        gap: 32px;
-    }
+  .teachers-list {
+    grid-template-columns: repeat(2, minmax(auto, 272px));
+    gap: 32px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    .teachers-list {
-        grid-template-columns: repeat(4, minmax(auto, 232px));
-    }
+  .teachers-list {
+    grid-template-columns: repeat(4, minmax(auto, 232px));
+  }
 }
 
 .teachers-item {
-    border-radius: 15px;
-    transition: transform var(--transition), box-shadow var(--transition),
-        border var(--transition);
-    border: 2px solid transparent;
+  border-radius: 15px;
+  transition: transform var(--transition), box-shadow var(--transition),
+    border var(--transition);
+  border: 2px solid transparent;
 }
 
-
 .teachers-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .teachers-img {
-    margin-bottom: 16px;
-    border-radius: 50%;
+  margin-bottom: 16px;
+  border-radius: 50%;
 }
 
 .teachers-name {
-    margin-bottom: 8px;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color: var(--black);
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--black);
 }
 
 .teachers-description {
-    font-size: 14px;
-    line-height: 1.714;
-    text-align: center;
-    color: var(--black_80);
+  font-size: 14px;
+  line-height: 1.714;
+  text-align: center;
+  color: var(--black_80);
 }
 
 @media only screen and (min-width: 768px) {
-    .teachers-description {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+  .teachers-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .teachers-section-heading {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.125;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: var(--black);
-    margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.125;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--black);
+  margin-bottom: 16px;
 }
 
 @media only screen and (min-width: 768px) {
-    .teachers-section-heading {
-        font-size: 40px;
-        line-height: 1.2;
-        letter-spacing: -0.02em;
-    }
+  .teachers-section-heading {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
 }
 
 .teachers-section-description {
-    color: rgba(18, 20, 23, 0.5);
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.71429;
-    text-align: center;
-    margin-bottom: 40px;
+  color: rgba(18, 20, 23, 0.5);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.71429;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-    .teachers-section-description {
-        font-size: 18px;
-        line-height: 1.66667;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 64px;
-        max-width: 586px;
-    }
+  .teachers-section-description {
+    font-size: 18px;
+    line-height: 1.66667;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px;
+    max-width: 586px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    .teachers-section-description {
-        max-width: 709px;
-    }
+  .teachers-section-description {
+    max-width: 709px;
+  }
 }
 
 .teachers-word-effect {
-    display: inline-block;
-    position: relative;
-    padding: 0 4px;
+  display: inline-block;
+  position: relative;
+  padding: 0 4px;
 }
 
 .teachers-word-effect::after {
-    content: '';
-    display: block;
-    border-radius: 8px;
-    background: #bee8cc;
-    height: 12px;
-    z-index: -1;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
+  content: '';
+  display: block;
+  border-radius: 8px;
+  background: var(--highlight-green);
+  height: 12px;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-    .teachers-word-effect::after {
-        height: 20px;
-    }
+  .teachers-word-effect::after {
+    height: 20px;
+  }
 }
 
 .teachers-container {
-    max-width: var(--container-max-width);
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .teachers-container {
-        padding: 0 32px;
-        max-width: var(--tablet-container-max-width);
-    }
+  .teachers-container {
+    padding: 0 32px;
+    max-width: var(--tablet-container-max-width);
+  }
 }
 
 .teachers-section {
-    padding-bottom: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 @media screen and (min-width: 768px) {
-    .teachers-section {
-        --section-padding: 100px;
-    }
+  .teachers-section {
+    --section-padding: 100px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .teachers-container {
-        max-width: var(--desktop-container-max-width);
-        padding-left: 128px;
-        padding-right: 128px;
-    }
+  .teachers-container {
+    max-width: var(--desktop-container-max-width);
+    padding-left: 128px;
+    padding-right: 128px;
+  }
 
-    .teachers-section {
-        --section-padding: 150px;
-    }
+  .teachers-section {
+    --section-padding: 150px;
+  }
 }
