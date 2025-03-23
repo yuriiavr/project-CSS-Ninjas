@@ -13,13 +13,13 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-CSS-Ninjas/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-CSS-Ninjas/assets/index-DkKyXVep.css">
+    <link rel="stylesheet" crossorigin href="/project-CSS-Ninjas/assets/index-S3FfmTDi.css">
   </head>
   <body>
     
 <!-- TODO: Add ids to each section for navigation: about-us, our-lessons, our-teachers, reviews, contact-us -->
 
-<header class="header">
+<header class="header" id="header">
       <div class="header-container">
         <nav class="nav">
           <a class="header-logo" href="./header.html">
@@ -40,7 +40,7 @@
             <li class="header-nav-item">
               <a
                 class="header-nav-link"
-                href="#our-lessons"
+                href="#lessons"
                 aria-label="Our lessons section"
               >
                 Our lessons
@@ -49,7 +49,7 @@
             <li class="header-nav-item">
               <a
                 class="header-nav-link"
-                href="#our-teachers"
+                href="#teachers"
                 aria-label="Our teachers section"
                 >Teachers</a
               >
@@ -222,10 +222,10 @@
   </div>
 </section>
 
-    <section class="about">
+    <section class="about" id="about">
   <div class="container">
     <div class="about-headline">
-      <h2 class="about-title">About <span class="marked mark">Us</span></h2>
+      <h2 class="about-title">About <span class="mark">Us</span></h2>
       <p class="about-description">We are dedicated to providing engaging and effective English language courses in a supportive and stimulating learning environment</p>
     </div>
     <div class="about-info">
@@ -241,10 +241,10 @@
     </div>
   </div>
 </section>
-    <section class="lessons" id="our-lessons">
+    <section class="lessons" id="lessons">
   <div class="container">
 
-      <h2 class="title">Our <span class="marked mark">lessons</span></h2>
+      <h2 class="title">Our <span class="mark">lessons</span></h2>
       <p class="text">Our lessons are carefully structured and interactive, designed to promote rapid language acquisition through practical tasks and real-world scenarios</p>
 
     <ul class="lessons-list">
@@ -275,12 +275,13 @@
     </ul>
   </div>
 </section>
-    <section class="proposal">
+    <section class="proposal" id="proposal">
   <div class="proposal-content">
-    <h2 class="proposal-title">
+    <h2 class="hidden-title">hidden title</h2>
+    <div class="proposal-title">
       Master the <span class="proposal-title-Language">Language</span> with Our
       English Package!
-    </h2>
+    </div>
     <div class="power-of-english-wrapper">
       <div class="background-layer layer1"></div>
       <div class="background-layer layer2"></div>
@@ -326,7 +327,9 @@
             class="books-img"
             width="214"
             height="263"
+            src="/project-CSS-Ninjas/assets/books-Bh3xosc1.png"
             srcset="/project-CSS-Ninjas/assets/books-Bh3xosc1.png 1x, /project-CSS-Ninjas/assets/books@2x-Dp3EbV8j.png 2x"
+            alt="books"
           />
         </div>
       </div>
@@ -334,10 +337,10 @@
   </div>
 </section>
 
-    <section class="teachers-section" id="our-teachers">
+    <section class="teachers-section" id="teachers">
   <div class="teachers-container">
-    <h2 class="teachers-section-heading">
-      Meet our <span class="teachers-word-effect">teachers</span>
+    <h2 class="title">
+      Meet our <span class="mark">teachers</span>
     </h2>
     <p class="teachers-section-description">
       Discover our team of dedicated educators, committed to guiding you on your
@@ -422,9 +425,9 @@
   </div>
 </section>
 
-    <section id="application">
+    <section id="application" id="application">
   <div class="container">
-    <h2 class="title">Leave an <span class="marked mark">application</span></h2>
+    <h2 class="title">Leave an <span class="mark">application</span></h2>
     <p class="application-text">
       Please use the form below to contact us. Enter your name, email, and
       message and we'll get back to you shortly.
@@ -505,11 +508,11 @@
   </div>
 </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
   <div class="container">
     <div class="reviews-about">
-      <h2>
-        What our <span class="reviews-title-underline">students</span> say
+      <h2 class="title">
+        What our <span class="mark">students</span> say
       </h2>
       <p>
         Hear from our students about their learning journey with us, as they
@@ -633,8 +636,9 @@
   </div>
 </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
   <div class="container">
+    
 
     <div class="footer-wrapper">
       <div class="footer-content">
@@ -648,7 +652,7 @@
 
           <div>
             <p class="footer-paragraph">Address:</p>
-            <address class="footer-contact">32a M. Bazhana ave</address>
+            <address class="footer-contact"><a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/xKwsV3bto3RqR1mu6">32a M. Bazhana ave</a></address>
           </div>
         </div>
       </div>
@@ -663,17 +667,17 @@
       </nav>
 
       <div class="container-social">
-        <a class="link" href="https://www.facebook.com/goITclub/ ">
+        <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/goITclub/ ">
           <svg class="icon" width="26" height="26">
             <use href="/project-CSS-Ninjas/assets/icons-BtXJc-ba.svg#icon-facebook"></use>
           </svg>
         </a>
-        <a class="link" href="https://www.instagram.com/goitclub/ ">
+        <a class="link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/goitclub/ ">
           <svg class="icon" width="26" height="26">
             <use href="/project-CSS-Ninjas/assets/icons-BtXJc-ba.svg#icon-instagram"></use>
           </svg>
         </a>
-        <a  class="link" href="https://www.youtube.com/c/GoIT ">
+        <a  class="link" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/c/GoIT ">
           <svg class="icon" width="26" height="26">
             <use href="/project-CSS-Ninjas/assets/icons-BtXJc-ba.svg#icon-youtube"></use>
           </svg>
