@@ -199,7 +199,7 @@ a.underline {
     display: block;
     font-size: 40px;
     font-weight: 700;
-    line-height: calc(48 / 40) 48px;
+    line-height: calc(48 / 40);
     color: var(--white);
     margin-bottom: 8px;
   }

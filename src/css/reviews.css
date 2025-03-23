@@ -100,7 +100,7 @@
 }
 
 .reviews-card-profile-name {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.6px;
@@ -108,7 +108,7 @@
 }
 
 .reviews-card-profile-status {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: var(--light-gray_50);
@@ -116,7 +116,7 @@
 
 .reviews-review {
   color: var(--black_50);
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }

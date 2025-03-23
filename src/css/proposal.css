@@ -83,7 +83,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: calc(24 / 20);
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   margin-bottom: 20px;
 
   @media (min-width: 768px) {
@@ -99,7 +99,7 @@
 .power-list {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   gap: 16px;
   margin-bottom: 39px;
   max-width: 654px;
@@ -213,7 +213,7 @@
   color: var(--black);
   font-weight: 700;
   line-height: calc(24 / 20);
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   font-size: 14px;
 
   @media (min-width: 768px) {
