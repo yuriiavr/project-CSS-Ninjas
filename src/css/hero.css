@@ -65,7 +65,6 @@
 }
 
 .hero-container .hero-button {
-  padding-inline: clamp(16px, 320px, 50px);
   width: 100%;
   max-width: 306px;
 }
@@ -110,7 +109,8 @@
 
   .hero-container .hero-button {
     width: auto;
-    padding-inline: clamp(16px, 320px, 64px);
+    padding-left: 63px;
+    padding-right: 63px;
   }
 }
 

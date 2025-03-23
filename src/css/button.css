@@ -1,6 +1,5 @@
 .button {
   border-radius: 12px;
-  padding-inline: clamp(16px, 320px, 64px);
   background: var(--green);
   border: none;
   font-family: var(--font-family);
@@ -9,8 +8,10 @@
   color: var(--white);
   display: inline-block;
   text-align: center;
-  transition: background-color var(--transition);
-  padding: 14px 78px;
+  transition: var(--transition);
+  transition-property: background-color, color, border-color;
+  padding: 14px 0;
+  border: 1px solid transparent;
 }
 
 .button:hover,
@@ -23,6 +24,6 @@
 @media only screen and (min-width: 768px) {
   .button {
     font-size: 18px;
-    padding: 16px 64px;
+    padding: 16px 0;
   }
 }
