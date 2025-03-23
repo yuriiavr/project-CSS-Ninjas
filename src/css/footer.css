@@ -1,6 +1,6 @@
 .footer {
   font-family: 'Manrope', sans-serif;
-  background-color: #121417;
+  background-color: var(--black);
   margin: 0;
 }
 
@@ -91,11 +91,11 @@ ol {
   display: inline-block;
   font-weight: 700;
   font-size: 20px;
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 20px;
 }
 .footer-logo-span {
-  color: #4dc274;
+  color: var(--green);
 }
 .footer-paragraph {
   font-weight: 400;
@@ -111,7 +111,7 @@ ol {
   font-weight: 600;
   font-size: 14px;
   line-height: 129%;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .footer-contacts-container {
@@ -130,7 +130,7 @@ ol {
   font-weight: 600;
   font-size: 14px;
   line-height: 129%;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .link {
@@ -144,18 +144,18 @@ ol {
   height: 42px;
 }
 
-.icon{
-  fill: #ffffff;
+.icon {
+  fill: var(--white);
 }
 
 .link:hover {
   border: 1px solid rgba(77, 194, 116, 0.1);
 }
 .link:hover .icon {
-  fill: #4dc274;
+  fill: var(--green);
 }
 .link:focus .icon {
-  fill: #4dc274;
+  fill: var(--green);
 }
 
 .container-social {
@@ -202,5 +202,5 @@ ol {
   bottom: -5px;
   width: 37px;
   height: 2px;
-  background-color: #4dc274;
+  background-color: var(--green);
 }

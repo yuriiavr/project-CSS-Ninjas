@@ -13,7 +13,7 @@
   --header-logo-line-height: 1;
 
   --radius: 8px;
-  --border-color: rgba(18, 20, 23, 0.1);
+  --border-color: var(--black_10);
   --border-color-light: rgba(255, 255, 255, 0.1);
 }
 
