@@ -4,7 +4,6 @@
   justify-content: center;
   padding: 0 20px;
   padding-top: 16px;
-  padding-bottom: 80px;
 }
 
 .hero-section h1 {
@@ -71,6 +70,14 @@
   background-color: var(--white);
   fill: var(--green);
   cursor: pointer;
+  transition: var(--transition);
+  transition-property: background-color, fill;
+}
+
+.to-footer:hover,
+.to-footer:focus {
+  background-color: var(--green);
+  fill: var(--white);
 }
 
 .to-footer svg {
@@ -86,7 +93,6 @@
 @media only screen and (min-width: 768px) {
   .hero-section {
     padding: 0 32px;
-    padding-bottom: 100px;
     padding-top: 16px;
   }
   .hero-section h1 {
@@ -144,7 +150,6 @@
 @media only screen and (min-width: 1280px) {
   .hero-section {
     padding: 0 64px;
-    padding-bottom: 96px;
     padding-top: 16px;
   }
   .hero-container {
