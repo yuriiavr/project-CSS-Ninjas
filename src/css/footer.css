@@ -123,6 +123,8 @@
 }
 
 .icon {
+  transition: var(--transition);
+  transition-property: fill;
   fill: var(--white);
 }
 
