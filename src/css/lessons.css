@@ -1,15 +1,14 @@
-
-.lessons{
+.lessons {
   padding-bottom: 150px;
 }
 
-.lessons .text{
+.lessons .text {
   max-width: 665px;
   margin: 0 auto 64px;
   text-align: center;
 }
 
-.lessons-list{
+.lessons-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 32px;
@@ -19,25 +18,27 @@
   list-style-type: none;
 }
 
-.lessons-list-item{
+.lessons-list-item {
   display: flex;
   flex-direction: column;
   gap: 21px;
   width: 100%;
   padding: 32px;
   border-radius: 30px;
-  background:var(--white);
+  background: var(--white);
   border: 1px solid var(--green);
   text-align: center;
+  transition: var(--transition);
+  transition-property: background-color, color;
 }
-@media only screen and (min-width:768px){
-  .lessons-list-item{
+@media only screen and (min-width: 768px) {
+  .lessons-list-item {
     width: calc((100% - 32px) / 2);
   }
 }
-@media only screen and (min-width:1280px){
-  .lessons-list-item{
-  width: calc((100% - 2 * 32px) / 3);
+@media only screen and (min-width: 1280px) {
+  .lessons-list-item {
+    width: calc((100% - 2 * 32px) / 3);
   }
 }
 
@@ -48,27 +49,33 @@
   line-height: 1.375;
   letter-spacing: -0.02em;
   color: var(--black);
+  transition: var(--transition);
+  transition-property: color;
 }
 
-.lessons-name{
+.lessons-name {
   font-size: 20px;
 }
 
-.lessons-list-item .button{
-  padding: 16px 40px;
-  line-height:1.5;
+.lessons-list-item .button {
+  line-height: 1.5;
 }
 
-.lessons-list-item-primary{
+.lessons-list-item:hover .lessons-name,
+.lessons-list-item:hover .lessons-price {
+  color: var(--white);
+}
+
+.lessons-list-item:hover {
   background: var(--green);
   color: var(--white);
 }
 
-.lessons-list-item-primary .lessons-name,
-.lessons-list-item-primary .lessons-price{
-  color: var(--white);
+.lessons-list-item:hover .button {
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.lessons-list-item-primary .button{
-  border: 1px solid rgba(255, 255, 255, 0.4)
+.lessons-list-item:hover .button:hover {
+  background-color: var(--white);
+  color: var(--green);
 }

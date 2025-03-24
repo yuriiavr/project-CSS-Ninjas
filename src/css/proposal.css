@@ -62,7 +62,10 @@
 }
 
 .power-part {
+  display: flex;
+  flex-direction: column;
   @media (min-width: 768px) {
+    display: block;
     margin-right: 20px;
   }
 
@@ -72,10 +75,13 @@
 }
 
 .power-part .button {
-  padding: 14px 58px;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0;
+
+  @media (min-width: 768px) {
+    padding: 14px 58px;
+  }
 }
 
 .power-text {
