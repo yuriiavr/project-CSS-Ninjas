@@ -7,18 +7,18 @@
   border-radius: 30px;
   margin: 0 auto;
   max-width: 335px;
-  margin-bottom: 80px;
+  margin-top: 80px;
   overflow: hidden;
 
   @media (min-width: 768px) {
     max-width: 704px;
-    margin-bottom: 100px;
+    margin-top: 100px;
     overflow: visible;
   }
 
   @media (min-width: 1280px) {
     max-width: 1152px;
-    margin-bottom: 150px;
+    margin-top: 150px;
   }
 }
 

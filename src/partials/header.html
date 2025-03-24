@@ -1,77 +1,156 @@
-
 <!-- TODO: Add ids to each section for navigation: about-us, our-lessons, our-teachers, reviews, contact-us -->
 
 <header class="header" id="header">
-      <div class="header-container">
-        <nav class="nav">
-          <a class="header-logo" href="./header.html">
-            english<span class="header-logo-highlight">excellence</span>.
-          </a>
+  <div class="header-container">
+    <nav class="nav">
+      <a class="header-logo" href="./header.html">
+        english<span class="header-logo-highlight">excellence</span>.
+      </a>
 
-          <!--desktop menu hidden on mobile -->
-          <ul class="header-nav header-nav-desktop">
-            <li class="header-nav-item">
-              <a
-                class="header-nav-link"
-                href="#about-us"
-                aria-label="About us section"
-              >
-                About us
-              </a>
-            </li>
-            <li class="header-nav-item">
-              <a
-                class="header-nav-link"
-                href="#lessons"
-                aria-label="Our lessons section"
-              >
-                Our lessons
-              </a>
-            </li>
-            <li class="header-nav-item">
-              <a
-                class="header-nav-link"
-                href="#teachers"
-                aria-label="Our teachers section"
-                >Teachers</a
-              >
-            </li>
-            <li class="header-nav-item">
-              <a
-                class="header-nav-link"
-                href="#reviews"
-                aria-label="Reviews section"
-                >Reviews</a
-              >
-            </li>
-            <li class="header-nav-item">
-              <a
-                class="header-nav-link"
-                href="#footer"
-                aria-label="Reviews section"
-                >Contact us</a
-              >
-            </li>
-          </ul>
-
-          <!--mobile menu trigger -->
-          <button
-            class="burger-menu burger-squeeze"
-            type="button"
-            aria-label="Menu"
-            aria-controls="navigation"
+      <!--desktop menu hidden on mobile -->
+      <ul class="header-nav header-nav-desktop">
+        <li class="header-nav-item">
+          <a
+            class="header-nav-link"
+            href="#about"
+            aria-label="About us section"
           >
-            <span class="burger-box">
-              <span class="burger-line"></span>
-            </span>
-          </button>
-        </nav>
+            About us
+          </a>
+        </li>
+        <li class="header-nav-item">
+          <a
+            class="header-nav-link"
+            href="#lessons"
+            aria-label="Our lessons section"
+          >
+            Our lessons
+          </a>
+        </li>
+        <li class="header-nav-item">
+          <a
+            class="header-nav-link"
+            href="#teachers"
+            aria-label="Our teachers section"
+            >Teachers</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a
+            class="header-nav-link"
+            href="#reviews"
+            aria-label="Reviews section"
+            >Reviews</a
+          >
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#footer" aria-label="Reviews section"
+            >Contact us</a
+          >
+        </li>
+      </ul>
 
-        <ul class="header-social header-social-descktop">
-          <li class="header-social-item">
+      <!--mobile menu trigger -->
+      <button
+        class="burger-menu burger-squeeze"
+        type="button"
+        aria-label="Menu"
+        aria-controls="navigation"
+      >
+        <span class="burger-box">
+          <span class="burger-line"></span>
+        </span>
+      </button>
+    </nav>
+
+    <ul class="header-social header-social-descktop">
+      <li class="header-social-item">
+        <a
+          class="header-social-item-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+        >
+          <svg class="header-social-icon" height="28" width="28">
+            <use href="./img/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a
+          class="header-social-item-link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+        >
+          <svg class="header-social-icon" height="28" width="28">
+            <use href="./img/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-item">
+        <a
+          class="header-social-item-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+        >
+          <svg class="header-social-icon" height="28" width="28">
+            <use href="./img/icons.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!--mobile menu -->
+    <div class="mobile-header-nav-sidebar-overlay">
+      <div class="mobile-header-nav-sidebar" id="navigation">
+        <ul class="mobile-header-nav">
+          <li class="mobile-header-nav-item">
             <a
-              class="header-social-item-link"
-              href="https://www.facebook.com/goITclub/"
+              class="mobile-header-nav-link"
+              href="#about"
+              aria-label="About us section"
+            >
+              About us
+            </a>
+          </li>
+          <li class="mobile-header-nav-item">
+            <a
+              class="mobile-header-nav-link"
+              href="#lessons"
+              aria-label="Our lessons section"
+            >
+              Our lessons
+            </a>
+          </li>
+          <li class="mobile-header-nav-item">
+            <a
+              class="mobile-header-nav-link"
+              href="#teachers"
+              aria-label="Our teachers section"
+              >Teachers</a
+            >
+          </li>
+          <li class="mobile-header-nav-item">
+            <a
+              class="mobile-header-nav-link"
+              href="#reviews"
+              aria-label="Reviews section"
+              >Reviews</a
+            >
+          </li>
+          <li class="mobile-header-nav-item">
+            <a
+              class="mobile-header-nav-link"
+              href="#footer"
+              aria-label="Reviews section"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-header-social">
+          <li class="mobile-header-social-item">
+            <a
+              class="mobile-header-social-item-link"
+              href="https://www.facebook.com/"
               target="_blank"
             >
               <svg class="header-social-icon" height="28" width="28">
@@ -79,10 +158,10 @@
               </svg>
             </a>
           </li>
-          <li class="header-social-item">
+          <li class="mobile-header-social-item">
             <a
-              class="header-social-item-link"
-              href="https://www.instagram.com/goitclub/"
+              class="mobile-header-social-item-link"
+              href="https://www.instagram.com/"
               target="_blank"
             >
               <svg class="header-social-icon" height="28" width="28">
@@ -90,10 +169,10 @@
               </svg>
             </a>
           </li>
-          <li class="header-social-item">
+          <li class="mobile-header-social-item">
             <a
-              class="header-social-item-link"
-              href="https://www.youtube.com/c/GoIT"
+              class="mobile-header-social-item-link"
+              href="https://www.x.com/"
               target="_blank"
             >
               <svg class="header-social-icon" height="28" width="28">
@@ -102,87 +181,7 @@
             </a>
           </li>
         </ul>
-
-        <!--mobile menu -->
-        <div class="mobile-header-nav-sidebar-overlay">
-          <div class="mobile-header-nav-sidebar" id="navigation">
-          <ul class="mobile-header-nav">
-            <li class="mobile-header-nav-item">
-              <a
-                class="mobile-header-nav-link"
-                href="#about-us"
-                aria-label="About us section"
-              >
-                About us
-              </a>
-            </li>
-            <li class="mobile-header-nav-item">
-              <a
-                class="mobile-header-nav-link"
-                href="#our-lessons"
-                aria-label="Our lessons section"
-              >
-                Our lessons
-              </a>
-            </li>
-            <li class="mobile-header-nav-item">
-              <a
-                class="mobile-header-nav-link"
-                href="#our-teachers"
-                aria-label="Our teachers section"
-                >Teachers</a
-              >
-            </li>
-            <li class="mobile-header-nav-item">
-              <a
-                class="mobile-header-nav-link"
-                href="#reviews"
-                aria-label="Reviews section"
-                >Reviews</a
-              >
-            </li>
-            <li class="mobile-header-nav-item">
-              <a
-                class="mobile-header-nav-link"
-                href="#contact"
-                aria-label="Reviews section"
-                >Contact us</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-header-social">
-            <li class="mobile-header-social-item">
-              <a
-                class="mobile-header-social-item-link"
-                href="https://www.facebook.com/" target="_blank"
-              >
-                <svg class="header-social-icon" height="28" width="28">
-                  <use href="./img/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-header-social-item">
-              <a
-                class="mobile-header-social-item-link"
-                href="https://www.instagram.com/" target="_blank"
-              >
-                <svg class="header-social-icon" height="28" width="28">
-                  <use href="./img/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-header-social-item">
-              <a
-                class="mobile-header-social-item-link"
-                href="https://www.x.com/" target="_blank"
-              >
-                <svg class="header-social-icon" height="28" width="28">
-                  <use href="./img/icons.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        </div>
       </div>
-    </header>
+    </div>
+  </div>
+</header>

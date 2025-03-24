@@ -130,10 +130,7 @@
 
 .header-nav-link:hover,
 .header-nav-link:active,
-.header-nav-link:focus,
-.mobile-header-nav-link:hover,
-.mobile-header-nav-link:active,
-.mobile-header-nav-link:focus {
+.header-nav-link:focus {
   color: var(--header-color-accent);
 }
 

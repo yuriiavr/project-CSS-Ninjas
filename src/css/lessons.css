@@ -1,5 +1,13 @@
 .lessons {
-  padding-bottom: 150px;
+  padding-top: 80px;
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    padding-top: 150px;
+  }
 }
 
 .lessons .text {

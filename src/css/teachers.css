@@ -149,7 +149,7 @@
 }
 
 .teachers-section {
-  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding);
 }
 
 @media screen and (min-width: 768px) {
