@@ -46,7 +46,7 @@
 }
 
 .input-field:focus {
-  border: none;
+  border-color: transparent;
   outline: 1px solid var(--green);
 }
 
