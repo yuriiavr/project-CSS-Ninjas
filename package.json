@@ -20,7 +20,9 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "countup.js": "^2.8.0",
     "keen-slider": "^6.8.6",
+    "odometer_countup": "^1.0.4",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

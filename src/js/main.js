@@ -41,3 +41,13 @@
     import('./slider');
   }
 }
+
+import { CountUp } from 'countup.js';
+
+import { Odometer } from 'odometer_countup';
+
+const counter = new CountUp('counter', 1000, {
+  plugin: new Odometer({ duration: 2.3, lastDigitDelay: 0 }),
+  duration: 3.0,
+});
+counter.start();
