@@ -20,18 +20,24 @@
 {
   ('use strict');
 
-  const observerOptions = {
-    rootMargin: '100px 0px 0px 0px', // load slider if user bottom border of screen 100px above slider
-  };
+  const isIntersectionObserverSupported = 'IntersectionObserver' in window;
 
-  const initSlider = entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        import('./slider');
-      }
-    });
-  };
+  if (isIntersectionObserverSupported) {
+    const observerOptions = {
+      rootMargin: '100px 0px 0px 0px', // load slider if user bottom border of screen 100px above slider
+    };
 
-  const observer = new IntersectionObserver(initSlider, observerOptions);
-  observer.observe(document.querySelector('.keen-slider'));
+    const initSlider = entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          import('./slider');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(initSlider, observerOptions);
+    observer.observe(document.querySelector('.keen-slider'));
+  } else {
+    import('./slider');
+  }
 }
